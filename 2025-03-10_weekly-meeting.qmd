@@ -1,0 +1,56 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+### Week 14 Recap
+
+- Resample the `BatteryForecast` class to monthly values instead of yearly
+- Created a sample sheet for current impacts of warranty on sys 0026 & 0030
+
+![](images/sample-warranty-db.png){width=60%}
+
+## Updates to warranty
+
+:new: warranty zones, with a condition
+
+![](images/new-warranty-zones.png){width=90%}
+
+![](images/new-warranty-condition.png){width=90%}
+
+## {.smaller}
+
+- Changes to warranty depreciation rates, that make it harsher if system spend time in amber/red
+
+![](images/new-warranty-rates.png)
+
+If warranty elapsed 50 days and 1 day was spent in both zones
+
+previously:
+$$
+1205*(1-0.2)^{50/365}*(1-0.2)^{1/365}*(1-0.2)^{1/365} = 1167.3
+$$
+
+now:
+$$
+1205*(1-0.2)^{50/365}*(1-0.4)^{1/365}*(1-0.6)^{1/365} = 1164.16
+$$
+
+## {.smaller}
+
+The impact over time :hourglass:
+
+![](images/new-warranty-impacts.png){width=90%}
+
+
+## Next week
+
+Implementing the above warranty changes into my classes
+
+- Keeping data_logger functions
+
+- Implement the warranty zone condition in `ClaimDepreciation` class, where we compute the throughput and take account of BIN movements.
+
+- Change the contract details of volvo systems, before moving to changes in `BatteryForecast` class

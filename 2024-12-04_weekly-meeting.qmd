@@ -1,0 +1,38 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+---
+
+## Tasks
+
+- Check that all battery swap scenarios are handled in my BatteryForecast Class
+- Write DocStrings for my functions
+- Create unit tests for BatteryForecast Class
+
+## Progress
+
+- Checked all scenarios
+- Finished writing DocStrings for my functions
+- Started writing unit tests
+    - blocked: need a bit of restructuring the functions
+
+## Output
+- Battery is present in system from begining and has not been moved to storage
+![](images/output-1.png)
+
+- Battery was moved to storage
+![](images/output-2.png)
+
+# Questions {background-color="#105034"}
+
+## Question
+- How to handle writing out files for battery swap between system A and system B
+![](images/screenshot 1.png)
+
+# Next week tasks {background-color="#105034"}
+
+## Tasks
+- Complete writing unit tests and submit PR
+- Create Project Overview in Loop workspace
+- Review PR comments from Aditi

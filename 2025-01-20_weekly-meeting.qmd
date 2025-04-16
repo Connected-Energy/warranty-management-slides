@@ -1,0 +1,14 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+preview-links: true
+from : markdown+emoji
+---
+
+
+## Progress
+- :checkered_flag: Moved the last few changes of warranty-dashboard PR to cepy
+    - :see_no_evil: Test not running on Github ![](images/cepy-test-error.png)
+- :scroll: Querying data in BatteryForecast class
+- :date: Data calculation date in QS can be inserted as an insight/table

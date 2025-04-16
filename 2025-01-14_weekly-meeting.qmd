@@ -1,0 +1,14 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+preview-links: true
+from : markdown+emoji
+---
+
+
+## Progress {.smaller}
+- :white_check_mark: Addressed all PR comments for warranty-claim-depreciation
+- :file_folder: Warranty-depreciation files written out to `data-results-beta` for sys 26&27
+- :bug: Crawler and Athena table created for warranty files
+- :scroll: Files will be queried in BatteryForecast class

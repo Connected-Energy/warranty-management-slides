@@ -1,0 +1,39 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+### Week 19 Recap
+
+- 👩‍🔬 Q1-2025 [SOH]{.green} and [Warranty]{.green} summary sheet.
+
+
+## System Findings {.smaller}
+
+&nbsp;
+
+<!-- prettier-sort-markdown-table -->
+| System Name | Green(%) | Amber(%) | Red(%) |   Black(%)    |
+|:------------|:--------:|:--------:|:------:|:-------------:|
+| Cranfield   |   64.5   |   28.5   |   7    |       0       |
+| Bristol     |   79.5   |   18.8   |  1.5   | [0.02]{.blue} |
+| Sheffield   |    92    |    7     |   1    |       0       |
+| WSC         |   45.7   |   40.5   |  13.5  | [0.3]{.blue}  |
+| Volvo-Goth  |   92.8   |    7     |  0.11  | [0.1]{.blue}  |
+| Volvo-Car   |   98.7   |   0.9    |  0.4   |       0       |
+| Volvo-Enf   |   97.5   |    2     |  0.45  | [0.05]{.blue} |
+
+:::aside
+Time in each zone until 31/02/2025
+:::
+
+
+## Next Steps
+
+- Refactor `data_logger`
+
+- Remove capacity test dates from warranty data
+
+- Clean up quarterly sheet 

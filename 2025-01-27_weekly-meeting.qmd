@@ -1,0 +1,19 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+---
+
+## Week 8 Recap{.smaller}
+
+- Worked on BatteryForecast Class
+    - move to `cepy` repo
+    - refactor the code
+    - add in %time spent in each zone
+        - inserted `n_samples` column in ClaimDepreciation class
+    - adding in more unit tests
+![](images/battery-forecast-output-2.png)
+
+
+
+

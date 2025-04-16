@@ -1,0 +1,22 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+## Week 9 Recap{.smaller}
+
+- :innocent: Finished working on BatteryForecast PR and has been reviewed by Aditi
+- :satisfied:Warranty binned columns now computed for all historic summary data
+- Started working on dashboarding
+    - :cold_sweat: no date_time column to reference change over time
+    - :bulb: File dates can be queried in S3
+    ![](images/s3-query.png)
+    ![](images/s3-query-result.png)
+
+
+
+
+
+

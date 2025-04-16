@@ -1,0 +1,38 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+### Week 17 Recap
+
+- 🛠️Working on PR comments.
+
+- 👨‍💻👩‍💻 Buddy coding session with Jochem to refactor ClaimDepreciation class.
+
+##
+
+- Finding total zone agg for batteries in EstorDataSummariser.
+- 🗂️Rank the zone and arrange the columns accordingly
+```python
+rank_bins = {"black": 3, "red": 2, "amber": 1, "green": 0}
+rank_bins = {"black": 3, "red": 2, "amber": 1, "green": 0}
+for col in df_dummies.columns:
+    zone = col.split('_')[-2]
+    df_dummies[col] = np.where(df_dummies[col]==True, rank_bins[zone], 0)
+```
+
+##
+
+- 🎰Then take a maximum across all pattern columns - grouped by battery.
+
+```python
+# to make the process faster, converted it to an array
+max_values = df_dummies[group["columns"]].max(axis=1).to_numpy()
+#udpated df
+df_dummies_updated = pd.DataFrame(
+    np.where(df_dummies[group["columns"]].to_numpy() == max_values[:, None], 1, 0),
+    columns=group['columns'].to_list()
+    ).set_index(df_dummies.index)
+```

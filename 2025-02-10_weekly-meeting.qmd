@@ -1,0 +1,20 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+## Week 10 Recap{.smaller}
+- Review all PR comments from Aditi
+- added in zone % time in ClaimDepreciation df
+    - can also be used in BatteryForecast
+    - required for QS as nested sums were causing errors in calculation
+
+![](images/system%20df%20ss.png)
+
+
+
+
+
+

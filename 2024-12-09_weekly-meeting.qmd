@@ -1,0 +1,28 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+preview-links: true
+---
+
+## Tasks
+- Complete unit test for BatteryForecast Class
+- Process capacity test for sys 0028
+- Write the [Project Overview](https://connectedenergyint.sharepoint.com/:fl:/r/contentstorage/CSP_bee9fd1e-d7c5-4c5b-ab53-61fbc08972d3/Document%20Library/LoopAppData/Project%20Overview.loop?d=w7e675313935a4b228c47c0268db7913f&csf=1&web=1&e=vVIPdO&nav=cz0lMkZjb250ZW50c3RvcmFnZSUyRkNTUF9iZWU5ZmQxZS1kN2M1LTRjNWItYWI1My02MWZiYzA4OTcyZDMmZD1iJTIxSHYzcHZzWFhXMHlyVTJIN3dJbHkwd194M0EwY0VUeE5tVGR5akxPWmhYc24yNU9BcndxTVFiMmw3TUhaZkIwWCZmPTAxUFFYT1ROWVRLTlRYNFdVVEVKRllZUjZBRTJHM1BFSjcmYz0lMkYmYT1Mb29wQXBwJnA9JTQwZmx1aWR4JTJGbG9vcC1wYWdlLWNvbnRhaW5lciZ4PSU3QiUyMnclMjIlM0ElMjJUMFJUVUh4amIyNXVaV04wWldSbGJtVnlaM2xwYm5RdWMyaGhjbVZ3YjJsdWRDNWpiMjE4WWlGSWRqTndkbk5ZV0Zjd2VYSlZNa2czZDBsc2VUQjNYM2d6UVRCalJWUjRUbTFVWkhscVRFOWFhRmh6YmpJMVQwRnlkM0ZOVVdJeWJEZE5TRnBtUWpCWWZEQXhVRkZZVDFST00wTTFORVZFVGpORldFUldSMHBEVjBWSlRrUllWa2RSTTAwJTNEJTIyJTJDJTIyaSUyMiUzQSUyMjdhNGMwZjAxLWQ1MWEtNGVjNi04NmU2LWRjZDIwYTY5NjViZSUyMiU3RA%3D%3D) for loop workspace
+
+
+## Progress
+- Completed all unit tests, but currently blocked.
+- Want to add another row to the forecast_df to compute the run date(today) depreciation value
+- Do I create unit test for function warranty_bin.
+
+
+# This week tasks {background-color="#105034"}
+
+## Tasks
+- Complete adding new row into forecast_df, complete unit test
+- Update local_batch.py and run_cd.py with BatteryForecast Class
+- Create PR for BatteryForecast class
+- Review Aditi comments on ClaimDepreciation class
+
+

@@ -1,0 +1,11 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+### Week 18 Recap
+
+- 🐞 Debugging and addressing PR comments to process Q1 warranty data sheet
+- 📜 Created a script to query data and output a csv with results

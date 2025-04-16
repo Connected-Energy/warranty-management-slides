@@ -1,0 +1,19 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+### Week 16 Recap {.smaller}
+
+- 👩‍💻 Created PR for changes to ClaimDepreciation
+- 🗃️ Wrote out few files for sys 30 summarised data, and depreciation data. 
+- 👩‍🏭 Worked on refactoring BatteryForecast Class
+
+## This week
+- 🧪 Updating BatteryForecast class unit tests
+- 🐑 Create a `.csv` file for SOH and Warranty number for [Q1]{.blue} of all systems
+    - To be created every quarter
+
+![](images/system-altelium-db.png){width=100%}

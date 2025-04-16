@@ -1,0 +1,13 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+preview-links: true
+
+---
+
+
+## Progress
+- Working on PR comments from Jochem for warranty-claim-depreciation
+    - fixing bugs in unit tests, due to change in input and output of functions
+- Once done, I can create crawler and athena table to work on BatteryForecast Class

@@ -1,0 +1,20 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+preview-links: true
+
+---
+
+
+## Progress {.smaller}
+- Completed review of PR comments from Aditi, being reviewed by Jochem now.
+- Data refresh date can be implemented on QS, to assist when the depreciation value was last calculated.
+    - a new calculated field, now(), can be created in 'edit dataset' step.
+    - The field will get updated anytime the data on SPICE is refreshed.
+
+![](images/qs_screenshot.png)
+
+- Create SOH logging slides
+
+

@@ -1,0 +1,19 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+## Week 12 Recap
+- :date: Create `date_file` as a column in bin monthly files written out
+![](images/bin_monthly_files.png)
+
+## 
+:left_right_arrow: Resampled the `battery_pack_value` df from yearly to a monthly data sample rate
+![](images/monthly_bin_forecast_Df.png)
+
+
+
+
+

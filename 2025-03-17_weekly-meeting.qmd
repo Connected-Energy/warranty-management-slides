@@ -1,0 +1,56 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+### Week 15 Recap {.smaller}
+
+Implement the warranty zone condition in `ClaimDepreciation` class:
+
+```python
+# example pack location
+pack_location = '12a'
+# warranty bin labels
+warranty_bins = ['green', 'amber', 'red']
+#new_list
+df_new_zone = []
+
+# depending on which zone the day falls in, check the higher zones for any n_samples count.
+for bin in warranty_bins:
+    # if the sum of the bin agg is more than 0, loop through each row to adjust the zones
+    if df[f'total_{bin}_agg'].sum() > 0:
+        df_new_zone.append(
+            self._adjust_warranty_zone(
+                df = df[df[f"total_{bin}_agg"] > 0],
+                bin=bin,
+                patterns=["state_of_charge", "temp"],
+                battery=pack_location,
+            )
+        )
+```
+
+##
+
+For each battery pack:
+
+- If bin (*Throughput zone*) is 🟩, check if the **SoC** was in 🟡/🔴 zone for any particular day
+- If bin is 🟨, check if the **SoC** was in 🔴 zone for any particular day
+- For the above, check if **Temp** was in ⚫ zone for any particular day
+
+Update the total aggregated n_samples count after each check
+
+
+## {.smaller}
+
+![](images/warranty-updated-df.png){width=100%}
+
+Let's look at pack at location [12b]{style="background-color: yellow;"} for an example:
+
+- It did 27 days in [green]{style="color: green;"} zone and 1 day in [amber]{style="color: orange;"} zone.
+- During the [amber]{style="color: orange;"} day, the *SoC* was also in [amber & red]{style="background-color: yellow"} zone.
+- Thus for `total_amber_agg` we get :
+$$
+(1 \, day * {n \, samples}) - 1195 = 16085
+$$

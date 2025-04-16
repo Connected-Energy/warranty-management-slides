@@ -1,0 +1,13 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+preview-links: true
+
+---
+
+
+## Progress {.smaller}
+- Working on PR comments from Jochem for warranty-claim-depreciation
+- The test for new feature in BatteryLog is failing on github
+

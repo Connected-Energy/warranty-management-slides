@@ -1,0 +1,52 @@
+---
+title: "Warranty Brief"
+author: "Shreya"
+date: 2025-01-23
+format: revealjs
+from : markdown+emoji
+---
+
+## Agenda
+- :vertical_traffic_light: Warranty conditions
+- :slot_machine: Warranty binned data
+- :money_with_wings: Warranty claim depreciation data
+- :milky_way: Warranty forecast data
+- :bulb: Dashboard Ideas
+
+## Warranty Basics{.smaller}
+![](images/warranty-zones.png)
+
+- Zones stored per system in `bess-info/warranty/operating-ranges`
+- Start and End date of contract stored per system in
+`bess-info/warranty/contract-info`
+
+## Warranty Binned columns{.smaller}
+- 5 sec data binned according to the zones for: Soc, Temp and Power Flow
+- Data is binned for each bin location and then aggregated to the esd level
+![](images/summary-bin-data.png)
+
+## Warranty Claim Depreciation{.smaller}
+![](images/battery-pack-value.png)
+
+- Claim starts at a value of £1205
+- Compute data according to BIN ids
+- Handles BIN swaps/replacement
+    - within systems
+    - different systems
+
+## 
+- Files written out for each `BIN` and `System` at a monthly frequency
+![](images/warranty-bin-monthly-output.png)
+
+## Warranty Forecast {.smaller}
+- Compute a 5yr value of each BIN, given the current depreciation data
+- Results are stored per `BIN ID` and their respective `System ID`
+![](images/battery-forecast-output.png)
+
+## Dashboard Tabs
+
+- :moneybag: Overview - All systems and available claim amount
+- :battery: Battery/BIN Overview
+- :factory:Per System break down
+- :microscope: Battery deep look
+- :traffic_light: Warranty Conditions
