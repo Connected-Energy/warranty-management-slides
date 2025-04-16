@@ -1,0 +1,10 @@
+format:
+  revealjs:
+    theme: theme.scss
+    logo: logo.png
+    center: true
+    title-slide-attributes:
+      data-background-image: title-background.jpg
+      data-background-color: "#2B2B2F"
+
+

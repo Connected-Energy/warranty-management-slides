@@ -1,0 +1,80 @@
+/*-- scss:defaults --*/
+
+// fonts
+
+@font-face {
+    font-family: 'Inter'; /*a name to be used later*/
+    src: url('../../../../../Inter.woff2'); /*URL to font*/
+}
+
+$font-family-sans-serif: "Inter" !default;
+
+// headings
+$presentation-heading-font: "Inter" !default;
+$presentation-heading-color: #414145 !default;
+
+// colours
+$body-color: #2B2B2F !default;
+
+.green {
+    background-color:  #A7C622;
+}
+
+.blue {
+    background-color:  #008D9C;
+    color: #ffff;
+}
+
+.dark-green {
+    background-color: #105034;
+    color: #ffff;
+}
+
+.green, .blue, .dark-green {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+// tables
+
+.ce-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+    
+} 
+
+.ce-table td {
+    border-style:hidden;
+}
+
+.ce-table {
+
+    max-height: 400px; 
+    overflow: auto;
+    font-size: 11px;
+}
+
+.ce-table th {
+    position: sticky;
+    top: -1px;
+    background-color: white;
+}
+
+// logo
+
+.slide-logo {
+    z-index: -999 !important;
+}
+
+// layout
+
+$presentation-title-slide-text-align: left !default;
+
+/*-- scss:rules --*/
+
+h1 {
+    background-image: url('../../../../../logo-white.png');
+    background-position: 0px 0px;
+    background-size: auto 100px;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+}
