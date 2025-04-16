@@ -1,0 +1,53 @@
+---
+title: "Warranty Management Progress"
+author: "Shreya Maliwal"
+format: revealjs
+from : markdown+emoji
+---
+
+### Week 20 Recap
+
+- Last week, the Q1 warranty results showed some BINS entering the black zone.
+
+[Sys0027]{.green}
+
+- Raw data showed that charge for the pack got stuck
+
+- Adjusted calculation of throughput per pack:
+    - use `charge_node`/2 for a more accurate computation
+    - use 1st life capacity, instead of second
+
+## Re-processing{.smaller}
+
+- [Sys0030]{.green} still showed some BINs in the **black** zone only on '2024-04-03'.
+
+Further look showed:
+
+- At the end of '2024-04-02', the `power_flow_esd` was high, matching the sum across the channels.
+
+![](images/240402-power-flow.png)
+
+
+- At start of '2024-04-03', the `power_flow_esd` fell to 0, but the power across channel continued to remain high as previously.
+
+![](images/240403-power-flow.png)
+
+
+##
+
+Matching it with the event logs:
+
+- At the end of '2024-04-02', `Comms error status changed to 2`
+
+![](images/240402-comms-error.png)
+
+- At mid-day of '2024-04-03', `CommsEror status changed to 0`, aligning with when the charge_channel values returned to normal.
+
+![](images/240403-comms-error.png)
+
+
+## Next Steps
+
+- Under warranty calculations, try to match events log for comms error ['status changed to 2']{.green} with the `power_flow_esd` to find discrepancies.
+- Check if any of the discrepancies lead to throughput entering the `black` zone.
+- Retroactively, also check if it shows up in the deviant/threshold dashboard.
